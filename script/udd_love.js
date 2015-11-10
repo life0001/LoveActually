@@ -30,6 +30,7 @@ var LoveActually={
             e.stopPropagation();
             $toggleLi.find('div').css('left',-9999);
             $(this).find('div').css('left',-1);
+            $toggleLi.eq(2).find('div').html('');
             if($toggleLi.index($(this))==1 && clicked){
                 for(var i=1; i<13; i++){
                     $(this).find('div').append('<p>'+i+'</p>');
@@ -46,7 +47,6 @@ var LoveActually={
         $toggleLi.on('click','p',function(e){
             e.stopPropagation();
             $(this).parent().css('left','-9999px').prev().text($(this).text());
-            $toggleLi.eq(2).find('div').html('');
         });
 
     })(),
