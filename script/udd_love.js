@@ -92,7 +92,7 @@ var LoveActually={
     GetMonthDays:(function(){
         var days;
         var year=$('.txt2').eq(0).text();
-        var month=5;
+        var month=$('.txt2').eq(1).text()
         switch(month){
             case 1:
             case 3:
