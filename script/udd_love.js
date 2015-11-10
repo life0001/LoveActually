@@ -45,7 +45,8 @@ var LoveActually={
         });
         $toggleLi.on('click','p',function(e){
             e.stopPropagation();
-            $(this).parent().css('left','-9999px').prev().text($(this).text())
+            $(this).parent().css('left','-9999px').prev().text($(this).text());
+            console.log($('.txt2').eq(1).text())
         });
 
     })(),
@@ -110,4 +111,4 @@ var LoveActually={
         return days;
   })
 };
-alert($('.txt2').length)
+
