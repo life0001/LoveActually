@@ -70,7 +70,7 @@ var LoveActually={
                 }
 
                 if($lastchildS.text().length>=3){
-                    if($lastchildS.text().length==$lastchildS.text().length){
+                    
                         if(Append==$lastchildS.text().length){
                             $('.num').prepend('<s>0</s>');
                             Append=$lastchildS.text().length+1;
@@ -84,7 +84,7 @@ var LoveActually={
                             allS.eq(allS.length-($lastchildS.text().length-6)).text($lastchildS.text().substr(6,1));
                             $lastchildS.text($lastchildS.text().charAt($lastchildS.text().length - 1));
                         }
-                    }
+                    
                 }
             }
         }
