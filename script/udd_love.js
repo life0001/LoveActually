@@ -50,7 +50,7 @@ var LoveActually={
 
     })(),
     add:(function(){
-        var timer, Append= 4, num=0;
+        var timer, Append= 4, $num=$('.num');
         function Addnum(Seconds){
             var $lastchildS=$('.num s:last-child');
             return function(){
@@ -71,7 +71,7 @@ var LoveActually={
 
                 if($lastchildS.text().length>=3){
                     if(Append==$lastchildS.text().length){
-                        $('.num').prepend('<s>0</s>');
+                        $num.prepend('<s>0</s>');
                         Append=$lastchildS.text().length+1;
                     }else{
                         $allS.eq(0).text($lastchildS.text().substr(0,1));
@@ -90,9 +90,10 @@ var LoveActually={
         timer=setInterval(Initialize,1);
     })(),
     GetMonthDays:(function(){
+        var $txt2=$('.txt2');
         var days;
-        var year=parseInt($('.txt2').eq(0).text());
-        var month=parseInt($('.txt2').eq(1).text()) ;
+        var year=parseInt($txt2.eq(0).text());
+        var month=parseInt($txt2.eq(1).text()) ;
         switch(month){
             case 1:
             case 3:
