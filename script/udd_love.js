@@ -46,7 +46,6 @@ var LoveActually={
         $toggleLi.on('click','p',function(e){
             e.stopPropagation();
             $(this).parent().css('left','-9999px').prev().text($(this).text());
-            console.log($('.txt2').eq(1).text())
         });
 
     })(),
@@ -93,7 +92,7 @@ var LoveActually={
     GetMonthDays:(function(){
         var days;
         var year=$('.txt2').eq(0).text();
-        var month=$('.txt2').eq(1).text();
+        var month=5;
         switch(month){
             case 1:
             case 3:
