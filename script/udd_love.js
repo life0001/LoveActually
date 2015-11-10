@@ -110,3 +110,4 @@ var LoveActually={
         return days;
   })
 };
+alert($('.txt2').length)
