@@ -1,0 +1,49 @@
+#LoveActually{background:url(../images/bg.jpg) no-repeat center top; width:100%; }
+#LoveActually_Main{width:1200px; margin:0 auto;}
+#LoveActually .LoveActuallyContent2{background:url(../images/bg2.jpg) no-repeat center top; padding-bottom:88px;}
+.LoveActuallyContent .LoveActually_p1{height:445px; background:url(../images/love1.jpg) center top;}
+.LoveActuallyContent .LoveActuallyREG{height:445px; background:url(../images/love2.jpg) center top; text-align:center;}
+.LoveActuallyREG .LoveActually_a, .LoveActually_p2 s{background:url(../img/allbgs.png);}
+.LoveActually_p2 s{float:left; margin-right:8px;}
+.LoveActually_p2 span{float:left;}
+.LoveActuallyContent .LoveActually_p2, .LoveActuallyREG .LoveActually_a{text-align:center;}
+.LoveActually_p2 .s1{width:74px; height:41px; margin-right:10px;}
+.LoveActually_p2 .s2{width:110px; height:41px; background-position:0px -41px; margin-right:0px;}
+/*.LoveActually_p2 .num{width:53px; height:48px; line-height: 48px; margin-top:-4px; background-position:0px -83px; text-decoration:none; font-family: 黑体, 微软雅黑, 宋体, Arial, Helvetica, sans-serif; font-size:53px; color:#fff;}*/
+.LoveActually_p2 .num s{width:53px; height:48px; line-height: 48px; line-height: 56px\0; margin-top:-4px; background-position:0px -83px; text-decoration:none; font-family: 黑体, 微软雅黑, 宋体, Arial, Helvetica, sans-serif; font-size:53px; color:#fff;}
+.LoveActuallyContent .LoveActually_p2{display:inline-block; margin-top:119px;}
+.LoveActuallyREG .LoveActually_a{background-position:0px -131px; width:190px; height:67px; display:block; margin:0 auto; margin-top:11px;}
+.LoveActuallyREG h2{color:#3f3f3f; font-weight:bold; font-size:25px; margin-top:90px;}
+.LoveActuallyContent .LoveActually_p3{color:#6d6b6b; font-size:16px; line-height: 26px; margin-top:10px;}
+
+.LoveActuallyContent2 .photo1{background:url(../images/photo1.png) center top; height:208px;}
+.LoveActuallyContent2 .photo2{background:url(../images/photo2.png) center top; height:208px;}
+.LoveActuallyContent2 .txt{color:#3f3f3f; font-size:20px; padding:50px; padding-top:38px; line-height: 32px;}
+#LoveActually .txtRed{color:#fd1773; font-size:16px;}
+
+
+/*报名窗口*/
+#Registration{position:absolute; width:100%; height:100%; background:url(../img/bigBg.png);top:-9999px; left:0; filter: }
+#regForm{ background:url(../img/reg.png); width:503px; height:516px; color:#3e3a39; margin: 0 auto; position:relative;}
+.userInfo input{border:1px solid #3e3a39; }
+#regForm .userInfo{width:385px; margin:0 auto;}
+.userInfo .sex span {margin-right:20px; font-size:16px;}
+#regForm h2{padding-top:60px; background:url(../img/allbgs.png) no-repeat -966px 31px; font-size:36px; margin-bottom:30px;}
+#regForm .close{position:absolute; right:0; top:0; margin-right:-5px; margin-top:-5px; background:url(../img/allbgs.png) -126px 0; width:40px; height:40px; cursor:pointer;}
+#regForm label{font-size:18px;}
+.userInfo .userInfoList{margin-bottom:21px; height:39px; line-height:39px; }
+#regForm .userInfo .sex{margin-bottom:21px; font-size:18px;}
+.sex input{margin-left:12px; border:none;}
+.userInfoList input{ margin-left:10px; text-indent:1em;}
+#regForm button{background-color:#ea1b55; color:#fff; width:100%; height:47px; font-size:22px; margin-top:30px; cursor:pointer;}
+.userInfo p input{width:333px; height:39px; padding:5px 3px;}
+#regForm .regForm_date{position:relative; font-size:18px;}
+.regForm_date li{margin-right:5px; width:83px; height:37px; line-height:37px; border:1px solid #3e3a39; float:left; position:relative;}
+.regForm_date .regForm_dateUl .txt1{float:left; margin-right:12px; height:37px; line-height:37px;}
+.regForm_date li.off{background:url(../img/allbgs.png) no-repeat -180px 16px;}
+.regForm_dateUl li div{position:absolute; top:35px; left:-9999px; width:81px; border:1px solid #3e3a39; background-color:#eee; text-align:center;}
+.regForm_dateUl li p{height:24px; line-height:24px; font-size:14px; border-bottom:1px solid #ccc;}
+.regForm_dateUl li p:last-child{border-bottom:none;}
+.regForm_dateUl li p:hover{background-color:#00dae4;}
+.regForm_dateUl li .txt2{ display:block;  width:70px; text-align: center;}
+
