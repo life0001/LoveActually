@@ -13,7 +13,6 @@ var LoveActually={
     })(),
     Select:(function(){
         var clicked=true,clicked2=true;
-
         $(document).click(function(){
             $('.regForm_dateUl li div').css('left',-9999);
         });
