@@ -46,6 +46,7 @@ var LoveActually={
         $toggleLi.on('click','p',function(e){
             e.stopPropagation();
             $(this).parent().css('left','-9999px').prev().text($(this).text());
+            $toggleLi.eq(2).find('div').html('');
         });
 
     })(),
