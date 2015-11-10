@@ -66,7 +66,7 @@ var LoveActually={
                 {
                     allS.eq(allS.length-3).text($lastchildS.text().substr(0,1));
                     allS.eq(allS.length-2).text($lastchildS.text().substr(1,1));
-                    $lastchildS.text($lastchildS.text().charAt($lastchildS.text().length - 1))
+                    $lastchildS.text($lastchildS.text().substr($lastchildS.text().length-1,1));
                 }
 
                 if($lastchildS.text().length>=3){
@@ -75,14 +75,14 @@ var LoveActually={
                             $('.num').prepend('<s>0</s>');
                             Append=$lastchildS.text().length+1;
                         }else{
-                            allS.eq(allS.length-$lastchildS.text().length).text($lastchildS.text().substr(0,1));
-                            allS.eq(allS.length-($lastchildS.text().length-1)).text($lastchildS.text().substr(1,1));
-                            allS.eq(allS.length-($lastchildS.text().length-2)).text($lastchildS.text().substr(2,1));
-                            allS.eq(allS.length-($lastchildS.text().length-3)).text($lastchildS.text().substr(3,1));
-                            allS.eq(allS.length-($lastchildS.text().length-4)).text($lastchildS.text().substr(4,1));
-                            allS.eq(allS.length-($lastchildS.text().length-5)).text($lastchildS.text().substr(5,1));
-                            allS.eq(allS.length-($lastchildS.text().length-6)).text($lastchildS.text().substr(6,1));
-                            $lastchildS.text($lastchildS.text().charAt($lastchildS.text().length - 1));
+                            allS.eq(0).text($lastchildS.text().substr(0,1));
+                            allS.eq(1).text($lastchildS.text().substr(1,1));
+                            allS.eq(2).text($lastchildS.text().substr(2,1));
+                            allS.eq(3).text($lastchildS.text().substr(3,1));
+                            allS.eq(4).text($lastchildS.text().substr(4,1));
+                            allS.eq(5).text($lastchildS.text().substr(5,1));
+                            allS.eq(6).text($lastchildS.text().substr(6,1));
+                            $lastchildS.text($lastchildS.text().substr($lastchildS.text().length-1,1));
                         }
                     
                 }
