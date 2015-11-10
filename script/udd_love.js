@@ -31,7 +31,7 @@ var LoveActually={
             $toggleLi.find('div').css('left',-9999);
             $(this).find('div').css('left',-1);
             $toggleLi.eq(2).find('div').html('');
-            if($toggleLi.index($(this))==1){
+            if($toggleLi.index($(this))==1 && clicked){
                 for(var i=1; i<13; i++){
                     $(this).find('div').append('<p>'+i+'</p>');
                     clicked=false;
