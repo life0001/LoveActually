@@ -37,7 +37,7 @@ var LoveActually={
                     clicked=false;
                 }
             }
-            if($toggleLi.index($(this))==2 && $('.txt2').eq(0).text()==''){
+            if($toggleLi.index($(this))==2 && $('.txt2').eq(0).text()!=''){
                 for(var i=1; i<LoveActually.GetMonthDays()+1; i++){
                     $(this).find('div').append('<p>'+i+'</p>');
                 }
