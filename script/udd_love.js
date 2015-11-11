@@ -93,24 +93,10 @@ var LoveActually={
         timer=setInterval(Initialize,1);
     }),
     GetMonthDays:(function(){
-        var $txt2=$('.txt2');
-        var days;
-        var year=parseInt($txt2.eq(0).text());
-        var month=parseInt($txt2.eq(1).text()) ;
-        switch(month){
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 12: days=31; break;
-            case 4:
-            case 6:
-            case 9:
-            case 11: days=30; break;
-            case 2: year % 4==0 ? days= 29 : days=28; break;
-        }
+        var $txt2=$('.txt2'),
+        year=parseInt($txt2.eq(0).text()),
+        month=parseInt($txt2.eq(1).text()),
+        days=new Date(year,month,0).getDate();
         return days;
   })
 };
