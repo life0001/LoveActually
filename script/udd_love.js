@@ -89,8 +89,7 @@ var LoveActually={
                 }
             }
         }
-        var Initialize=new Addnum(0);
-        timer=setInterval(Initialize,1);
+        timer=setInterval(Addnum(0),1);
     }),
     GetMonthDays:(function(){
         var $txt2=$('.txt2'),
