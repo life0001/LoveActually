@@ -62,7 +62,7 @@ var LoveActually={
                 $lastchildS.text(Seconds);
                 if($lastchildS.text().length==2)
                 {
-                    $allS.eq(0).text($lastchildS.text().substr(0,1));
+                    $allS.eq(1).text($lastchildS.text().substr(0,1));
                     $lastchildS.text($lastchildS.text().substr($lastchildS.text().length-1,1));
                 }
                 if($lastchildS.text().length==3)
