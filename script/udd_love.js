@@ -35,13 +35,13 @@ var LoveActually={
 				$('.txt2').eq(2).text('');
 			}
             if($toggleLi.index($(this))==1 && clicked){
-                for(var i=1; i<13; i++){
+                for(var i=1; i<=12; i++){
                     $(this).find('div').append('<p>'+i+'</p>');
                     clicked=false;
                 }
             }
             if($toggleLi.index($(this))==2 && $('.txt2').eq(0).text()!=''){
-                for(var i=1; i<LoveActually.GetMonthDays()+1; i++){
+                for(var i=1; i<=LoveActually.GetMonthDays(); i++){
                     $(this).find('div').append('<p>'+i+'</p>');
                 }
             }
