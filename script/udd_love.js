@@ -58,8 +58,7 @@ var LoveActually={
             var $lastchildS=$('.num s:last-child');
             return function(){
                 var $allS=$('.num s');
-                Seconds++;
-                $lastchildS.text(Seconds);
+                $lastchildS.text(++Seconds);
                 if($lastchildS.text().length==2)
                 {
                     $allS.eq(1).text($lastchildS.text().substr(0,1));
