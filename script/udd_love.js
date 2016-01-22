@@ -20,20 +20,30 @@ var LoveActually={
     })(),
     Select:(function(){
         var clicked=true,
-        $toggleLi=$('.regForm_dateUl li');
+            date=new Date(),
+            $toggleLi=$('.regForm_dateUl li');
 
         $(document).click(function(){
             var $divhide=$('.regForm_dateUl li div');
             $divhide.css('left',-9999);
         });
+
         $toggleLi.click(function(e){
             e.stopPropagation();
             $toggleLi.find('div').css('left',-9999);
             $(this).find('div').css('left',-1);
             $toggleLi.eq(2).find('div').html('');
             if($toggleLi.index($(this))!=2){
-				$('.txt2').eq(2).text('');
-			}
+                $('.txt2').eq(2).text('');
+            }
+            if($toggleLi.index($(this))==0){
+                var year=date.getFullYear();
+                for (var i=0; i<5; i++){
+                    $(this).find('div').append('<p>'+year+'</p>');
+                    year++;
+                }
+                date=null;
+            }
             if($toggleLi.index($(this))==1 && clicked){
                 for(var i=1; i<=12; i++){
                     $(this).find('div').append('<p>'+i+'</p>');
@@ -50,7 +60,6 @@ var LoveActually={
             e.stopPropagation();
             $(this).parent().css('left','-9999px').prev().text($(this).text());
         });
-
     })(),
     add:(function(){
         var timer, Append= 4, $num=$('.num');
